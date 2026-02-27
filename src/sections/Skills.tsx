@@ -50,7 +50,7 @@ export default function Skills() {
                 {/* Proficiency ribbon */}
                 <div className="mt-14 grid sm:grid-cols-3 gap-6 text-center">
                     {[
-                        { label: 'Years Coding', value: '4+' },
+                        { label: 'Years Coding', value: '5+' },
                         { label: 'Apps Shipped', value: '10+' },
                         { label: 'Happy Clients', value: '5+' },
                     ].map((stat) => (
