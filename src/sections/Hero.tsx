@@ -1,6 +1,8 @@
 import { Github, Linkedin, Mail, ArrowDown } from 'lucide-react'
 import { SITE_CONFIG } from '../config'
 
+const BASE = import.meta.env.BASE_URL
+
 export default function Hero() {
     return (
         <section
@@ -24,7 +26,7 @@ export default function Hero() {
                 <div className="fade-up flex justify-center mb-8">
                     <div className="relative">
                         <img
-                            src="/mandreshope.png"
+                            src={`${BASE}mandreshope.png`}
                             alt="Mandresy logo"
                             width={96}
                             height={96}
