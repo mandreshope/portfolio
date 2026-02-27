@@ -2,6 +2,7 @@ import { useState } from 'react'
 import type { FormEvent } from 'react'
 import { Mail, Github, Linkedin, Copy, Check, Send } from 'lucide-react'
 import { SITE_CONFIG } from '../config'
+import { WhatsAppIcon } from '../components/WhatsAppIcon'
 
 export default function Contact() {
     const [name, setName] = useState('')
@@ -115,6 +116,23 @@ export default function Contact() {
                                 <p className="text-xs text-slate-500 mb-0.5">LinkedIn</p>
                                 <p className="text-sm font-medium group-hover:text-indigo-500 transition-colors">
                                     Connect with me
+                                </p>
+                            </div>
+                        </a>
+
+                        <a
+                            href={SITE_CONFIG.whatsapp}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="card p-5 flex items-center gap-4 hover:border-[#25D366]/50 transition-colors group"
+                        >
+                            <div className="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center">
+                                <WhatsAppIcon size={18} />
+                            </div>
+                            <div>
+                                <p className="text-xs text-slate-500 mb-0.5">WhatsApp</p>
+                                <p className="text-sm font-medium group-hover:text-[#25D366] transition-colors">
+                                    +261 34 244 2871
                                 </p>
                             </div>
                         </a>

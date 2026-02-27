@@ -1,6 +1,7 @@
 import { Github, Linkedin, Mail } from 'lucide-react'
 import { SITE_CONFIG } from '../config'
 import { GooglePlayIcon } from './GooglePlayIcon'
+import { WhatsAppIcon } from './WhatsAppIcon'
 
 export default function Footer() {
     const year = new Date().getFullYear()
@@ -9,6 +10,7 @@ export default function Footer() {
         { href: SITE_CONFIG.github, label: 'GitHub', icon: <Github size={20} /> },
         { href: SITE_CONFIG.linkedin, label: 'LinkedIn', icon: <Linkedin size={20} /> },
         { href: SITE_CONFIG.googlePlay, label: 'Google Play', icon: <GooglePlayIcon size={20} /> },
+        { href: SITE_CONFIG.whatsapp, label: 'WhatsApp', icon: <WhatsAppIcon size={20} /> },
         { href: `mailto:${SITE_CONFIG.email}`, label: 'Email', icon: <Mail size={20} /> },
     ]
 

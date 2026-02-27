@@ -13,6 +13,7 @@ export const SITE_CONFIG = {
     email: 'mandreshope@gmail.com',
     githubUsername: 'mandreshope',                  // ← used for the GitHub API
     googlePlay: 'https://play.google.com/store/apps/dev?id=6690241281899002210',
+    whatsapp: 'https://wa.me/261342442871',         // WhatsApp click-to-chat
 } as const
 
 // Repos that appear first / are highlighted with a ⭐ badge

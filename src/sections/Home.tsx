@@ -1,6 +1,7 @@
 import { Github, Linkedin, Mail, ArrowDown } from 'lucide-react'
 import { SITE_CONFIG } from '../config'
 import { GooglePlayIcon } from '../components/GooglePlayIcon'
+import { WhatsAppIcon } from '../components/WhatsAppIcon'
 
 const BASE = import.meta.env.BASE_URL
 
@@ -27,7 +28,7 @@ export default function Hero() {
                 <div className="fade-up flex justify-center mb-8">
                     <div className="relative">
                         <img
-                            src={`${BASE}mandreshope.png`}
+                            src={`${BASE}profile.png`}
                             alt="Mandresy logo"
                             width={96}
                             height={96}
@@ -82,6 +83,7 @@ export default function Hero() {
                         { href: SITE_CONFIG.github, label: 'GitHub', icon: <Github size={20} /> },
                         { href: SITE_CONFIG.linkedin, label: 'LinkedIn', icon: <Linkedin size={20} /> },
                         { href: SITE_CONFIG.googlePlay, label: 'Google Play', icon: <GooglePlayIcon size={20} /> },
+                        { href: SITE_CONFIG.whatsapp, label: 'WhatsApp', icon: <WhatsAppIcon size={20} /> },
                         { href: `mailto:${SITE_CONFIG.email}`, label: 'Email', icon: <Mail size={20} /> },
                     ].map(({ href, label, icon }) => (
                         <a
