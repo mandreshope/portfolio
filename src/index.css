@@ -183,10 +183,16 @@ body {
 /* ── Nav link ──────────────────────────────────────────────────────────────── */
 .nav-link {
   @apply text-sm font-medium transition-colors duration-150 relative;
-  color: rgba(255, 255, 255, 0.7);
+  /* Mode clair : gris marine lisible ; mode sombre : gris clair */
+  color: rgba(15, 22, 41, 0.70);
 }
 
-.nav-link:hover {
+.dark .nav-link {
+  color: rgba(232, 234, 240, 0.70);
+}
+
+.nav-link:hover,
+.dark .nav-link:hover {
   color: #F5B800;
 }
 
@@ -197,21 +203,11 @@ body {
 }
 
 .nav-link:hover::after {
-  @apply w-full;
+  width: 100%;
 }
 
-/* Light mode nav links */
-.light-nav .nav-link {
-  color: rgba(15, 22, 41, 0.65);
-}
 
-.light-nav .nav-link:hover {
-  color: #D49E00;
-}
 
-.light-nav .nav-link::after {
-  background: #D49E00;
-}
 
 /* ── Language badge ────────────────────────────────────────────────────────── */
 .lang-badge {
