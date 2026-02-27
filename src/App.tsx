@@ -13,7 +13,7 @@ export default function App() {
 
   return (
     <div className={theme}>
-      <div className="min-h-screen bg-white dark:bg-[#0d0f18] text-slate-800 dark:text-slate-200 transition-colors duration-300">
+      <div className="min-h-screen bg-white dark:bg-[#080c18] text-[#0f1629] dark:text-[#e8eaf0] transition-colors duration-300">
         <Navbar theme={theme} onToggle={toggle} />
         <main>
           <Hero />
