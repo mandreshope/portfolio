@@ -1,7 +1,7 @@
 import './index.css'
 import { useTheme } from './hooks/useTheme'
 import Navbar from './components/Navbar'
-import Hero from './sections/Hero'
+import Home from './sections/Home'
 import Projects from './sections/Projects'
 import Skills from './sections/Skills'
 import Services from './sections/Services'
@@ -16,7 +16,7 @@ export default function App() {
       <div className="min-h-screen bg-white dark:bg-[#080c18] text-[#0f1629] dark:text-[#e8eaf0] transition-colors duration-300">
         <Navbar theme={theme} onToggle={toggle} />
         <main>
-          <Hero />
+          <Home />
           <Projects />
           <Skills />
           <Services />

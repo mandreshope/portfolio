@@ -5,13 +5,14 @@
 export const SITE_CONFIG = {
     name: 'Randrianarinjaka Mandresy',
     shortName: 'Mandresy',
-    role: 'Mobile Developer · Backend Engineer · AI Enthusiast',
+    role: 'Mobile Developer · Backend Developer · AI Enthusiast',
     location: 'Madagascar 🇲🇬',
     bio: "I build mobile apps and backend APIs, integrate payments (Stripe), and work on AI tooling & automation. I care deeply about clean architecture, performance, and shipping reliable products.",
     github: 'https://github.com/mandreshope',       // ← update with your username
     linkedin: 'https://linkedin.com/in/mandresy',   // ← update with your profile
-    email: 'mandresy@example.com',                  // ← update with your email
+    email: 'mandreshope@gmail.com',
     githubUsername: 'mandreshope',                  // ← used for the GitHub API
+    googlePlay: 'https://play.google.com/store/apps/dev?id=6690241281899002210',
 } as const
 
 // Repos that appear first / are highlighted with a ⭐ badge
@@ -51,7 +52,7 @@ export const SERVICES = [
         icon: '📱',
         title: 'Mobile App Development',
         description:
-            'Cross-platform Flutter apps and native iOS/Android apps with Kotlin (Jetpack Compose) or Swift. Pixel-perfect UI, offline-first, and app-store ready.',
+            'Cross-platform Flutter, React Native apps and native iOS/Android apps with Kotlin (Jetpack Compose) or Swift. Pixel-perfect UI, offline-first, and app-store ready.',
     },
     {
         icon: '🔗',

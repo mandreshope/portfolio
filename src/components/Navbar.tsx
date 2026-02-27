@@ -34,9 +34,9 @@ export default function Navbar({ theme, onToggle }: NavbarProps) {
     return (
         <header
             className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${scrolled
-                    ? // Fond semi-opaque explicite au lieu de backdrop-filter seul
-                    'py-2 shadow-lg shadow-black/20 backdrop-blur-md border-b border-[#F5B800]/10 bg-white/90 dark:bg-[#080c18]/92'
-                    : 'bg-transparent py-4'
+                ? // Fond semi-opaque explicite au lieu de backdrop-filter seul
+                'py-2 shadow-lg shadow-black/20 backdrop-blur-md border-b border-[#F5B800]/10 bg-white/90 dark:bg-[#080c18]/92'
+                : 'bg-transparent py-4'
                 }`}
         >
             <nav className="max-w-6xl mx-auto px-4 flex items-center justify-between">
@@ -45,13 +45,13 @@ export default function Navbar({ theme, onToggle }: NavbarProps) {
                 <a href="#hero" aria-label="Home" className="flex items-center gap-2.5 group">
                     <img
                         src={`${BASE}mandreshope.png`}
-                        alt="Mandresy logo"
+                        alt="mandreshope logo"
                         width={36}
                         height={36}
                         className="rounded-lg shadow-md shadow-[#F5B800]/20 group-hover:scale-105 transition-transform"
                     />
                     <span className="font-extrabold text-base tracking-tight gradient-text hidden sm:inline">
-                        {SITE_CONFIG.shortName}
+                        {SITE_CONFIG.githubUsername}
                     </span>
                 </a>
 

@@ -58,10 +58,10 @@ All personal data lives in **`src/config.ts`** — edit it to match your profile
 ```ts
 // src/config.ts
 export const SITE_CONFIG = {
-  githubUsername: 'mandreshope',  // ← your GitHub username
-  github: 'https://github.com/mandreshope',
-  linkedin: 'https://linkedin.com/in/your-name',
-  email: 'you@example.com',
+  githubUsername: [github],
+  github: [github],
+  linkedin: [linkedin],
+  email: [EMAIL_ADDRESS],
   // ...
 }
 ```

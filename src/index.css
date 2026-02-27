@@ -5,6 +5,10 @@
 @import "@fontsource/inter/700.css";
 @import "@fontsource/inter/900.css";
 
+/* ── Tailwind v4 : dark mode via classe .dark sur <html> ───────────────────── */
+/* Sans cette ligne, dark: ne fonctionne qu'avec prefers-color-scheme          */
+@custom-variant dark (&:where(.dark, .dark *));
+
 /* ── Design tokens ─────────────────────────────────────────────────────────── */
 :root {
   /* 🟡 Jaune doré du logo */

@@ -1,5 +1,6 @@
 import { Github, Linkedin, Mail, ArrowDown } from 'lucide-react'
 import { SITE_CONFIG } from '../config'
+import { GooglePlayIcon } from '../components/GooglePlayIcon'
 
 const BASE = import.meta.env.BASE_URL
 
@@ -20,7 +21,7 @@ export default function Hero() {
                 style={{ background: 'radial-gradient(circle, #1a2340, #F5B800)', animationDelay: '3s' }}
             />
 
-            <div className="relative z-10 max-w-4xl mx-auto text-center">
+            <div className="relative z-10 max-w-4xl mx-auto text-center pb-24">
 
                 {/* Logo / Avatar */}
                 <div className="fade-up flex justify-center mb-8">
@@ -51,7 +52,7 @@ export default function Hero() {
                 {/* Name */}
                 <h1 className="fade-up delay-200 text-5xl md:text-7xl font-black tracking-tight mb-3 leading-none">
                     Hi, I&apos;m{' '}
-                    <span className="gradient-text">Mandresy</span>
+                    <span className="gradient-text">{SITE_CONFIG.name}</span>
                 </h1>
 
                 {/* Role */}
@@ -65,7 +66,7 @@ export default function Hero() {
                 </p>
 
                 {/* CTA buttons */}
-                <div className="fade-up delay-400 flex flex-wrap items-center justify-center gap-4 mb-16">
+                <div className="fade-up delay-400 flex flex-wrap items-center justify-center gap-4 mb-8">
                     <a href="#projects" className="btn-primary">
                         View Projects
                     </a>
@@ -80,6 +81,7 @@ export default function Hero() {
                     {[
                         { href: SITE_CONFIG.github, label: 'GitHub', icon: <Github size={20} /> },
                         { href: SITE_CONFIG.linkedin, label: 'LinkedIn', icon: <Linkedin size={20} /> },
+                        { href: SITE_CONFIG.googlePlay, label: 'Google Play', icon: <GooglePlayIcon size={20} /> },
                         { href: `mailto:${SITE_CONFIG.email}`, label: 'Email', icon: <Mail size={20} /> },
                     ].map(({ href, label, icon }) => (
                         <a

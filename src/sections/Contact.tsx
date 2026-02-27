@@ -12,7 +12,7 @@ export default function Contact() {
     const handleSubmit = (e: FormEvent) => {
         e.preventDefault()
         const subject = encodeURIComponent(`Portfolio inquiry from ${name}`)
-        const body = encodeURIComponent(`Hi Mandresy,\n\n${message}\n\n---\nFrom: ${name}\nEmail: ${email}`)
+        const body = encodeURIComponent(`Hi Mandresy Randrianarinjaka,\n\n${message}\n\n---\nFrom: ${name}\nEmail: ${email}`)
         window.location.href = `mailto:${SITE_CONFIG.email}?subject=${subject}&body=${body}`
     }
 
